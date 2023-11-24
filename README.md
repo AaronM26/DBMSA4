@@ -1,48 +1,39 @@
-# RepBook 📚
-
-## Features ✨
-- **User Authentication**: Secure login and signup functionality.
-- **Fitness Data Tracking**: Users can track various fitness metrics like height, weight, workout frequency, and more.
-- **Personalized Dashboard**: Customized view for users to monitor their fitness progress.
-
-## Stack 💻
-- **Frontend**: Swift
-- **Backend**: Node, Express
-- **Database**: PostgreSQL
-
-## Installation and Setup 🛠️
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/AaronM26/RepBook.git
-   cd RepBook
-Setup Backend
-bash
-Copy code
-cd backend
-npm install
-npm start
-Setup Frontend
-Open RepBook.xcodeproj in Xcode.
-Run the project in a simulator or real device.
-
-Usage Guide 📖
-Create an Account: Sign up with your personal details.
-Log In: Access your personalized fitness dashboard.
-Track Your Progress: Update your fitness metrics regularly.
-
-API Endpoints 🌐
-sql
-Copy code
-/api/login               POST    User Login
-/api/signup              POST    User Signup
-/api/userDataAndMetrics  GET     Fetch User Data and Metrics
-
-Author 👤
+Student Management System - COMP3005 A4
+Author
 Aaron McLean
-Final project for COMP 3005 at Carleton University.
+Student ID: 101226419
 
-License 📄
-This project is licensed under the MIT License - see the LICENSE file for details.
+Overview
+This project is a part of the COMP3005 course assignment 4. It implements a basic Student Management System using Swift for the frontend and Node.js with Express for the backend, interfacing with a PostgreSQL database. The system allows for performing CRUD (Create, Read, Update, Delete) operations on student data.
 
-Connect with Me 🤝
-GitHub: @AaronM26
+Features
+The application supports the following functionalities:
+
+Fetch All Students: Retrieves and displays a list of all students.
+Add Student: Adds a new student record to the database.
+Update Student Email: Updates the email address of an existing student.
+Delete Student: Removes a student record from the database.
+Setup Instructions
+Database Setup
+Install PostgreSQL and create a new database named Demo.
+Use the provided SQL scripts to set up the students table and insert initial data.
+Server Setup
+Navigate to the server directory.
+Run npm install to install dependencies.
+Start the server using node server.js.
+Application Setup
+Open the Swift project in Xcode.
+Ensure that the backend server is running.
+Build and run the application using Xcode.
+How to Use
+On launching the application, you will see four sections, each corresponding to a CRUD operation.
+Enter the required information in the text fields and use the buttons to perform actions.
+The "Fetch All Students" button will display the list of students in the app.
+Backend API
+The Node.js server provides endpoints for each of the CRUD operations, connecting to the PostgreSQL database to execute queries.
+
+Error Handling
+The application and server include basic error handling for network requests and database operations.
+
+Video Demonstration
+A demonstration video showing the functionality of the application is available here. https://youtu.be/NK_MsYPk7K0
